@@ -1,0 +1,247 @@
+/* commando.ttf*/
+
+@font-face {
+    font-family: spoody;
+    src: url(BebasNeue-Regular.otf);
+}
+
+body {
+    padding: 350px;
+    background: linear-gradient(0deg, rgb(39, 39, 39) 0%, rgb(255, 255, 255) 100%);
+}
+
+
+.title {
+    font-family: sans-serif;
+    color:white;
+    text-align: center;
+    top: 150px;
+    margin-top: 50px;
+    font-size: 100px;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+
+.desc {
+  font-family: sans-serif;
+  color:white;
+  text-align: center;
+  top: 150px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.description {
+    font-family: spoody;
+    color:white;
+    font-size: 20px;
+}
+
+.shit {
+  position: absolute;
+  top: -23px;
+  width: 80px;
+  height: 80px;
+  left: -113px;
+}
+
+
+.box {
+  width: 1300px;
+  height: 70px;
+  position: absolute;
+  top: 10px;
+  left: 155px;
+  background: linear-gradient(360deg, rgb(110, 110, 110) 0%, rgb(204, 204, 204) 100%);
+  border-radius: 15px;
+}
+
+
+.nav-item1 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 270px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item2 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 390px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item3 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 610px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item4 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 735px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item5 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 840px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item6 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 940px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item7 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 1170px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item8 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 1340px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item9 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 270px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item10 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 443px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item11 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 610px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item12 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 735px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item13 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 840px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item14 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 940px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item15 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 1170px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.nav-item16 {
+  font-family: spoody;
+  position: absolute;
+  color:white;
+  top: -25px;
+  left: 1340px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, rgb(0, 28, 70) 0%, rgb(255, 255, 255) 100%);
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 15px;
+  }
