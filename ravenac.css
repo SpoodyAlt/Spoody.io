@@ -10,15 +10,6 @@ body {
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 0, 97) 100%);
 }
 
-#myVideo {
-    position: fixed;
-    right: 0px;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    border: 2px white;
-  }
-
 .title {
     font-family: sans-serif;
     color:white;
@@ -41,6 +32,16 @@ body {
     font-family: spoody;
     color:white;
     font-size: 20px;
+}
+
+#myVideo {
+  position: fixed;
+  opacity: 30%;
+  right: 0px;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  border: 2px white;
 }
 
 .shit {
