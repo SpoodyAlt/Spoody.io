@@ -10,15 +10,6 @@ body {
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(42, 0, 97) 100%);
 }
 
-.title {
-    font-family: sans-serif;
-    color:white;
-    text-align: center;
-    top: 150px;
-    margin-top: 50px;
-    font-size: 100px;
-}
-
 #myVideo {
     position: fixed;
     right: 0px;
@@ -27,6 +18,15 @@ body {
     min-height: 100%;
     border: 2px white;
   }
+
+.title {
+    font-family: sans-serif;
+    color:white;
+    text-align: center;
+    top: 150px;
+    margin-top: 50px;
+    font-size: 100px;
+}
 
 .desc {
   font-family: sans-serif;
