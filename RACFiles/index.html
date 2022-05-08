@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootstrap4-glyphicons/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script>
+</script> 
+  </head>
+  <body style="background-color: transparent;">
+    <div class="card text-center" id="container" style="display: none;background-color: rgba(32, 32, 32, 0.712); width: 350px; height: 457px; margin: 0 auto;float: none;margin-top:10% ; border: 2px solid rgb(255, 145, 0); border-radius: 16px;">
+        <div class="card-body">
+          <style type="text/css">
+            @font-face {
+                font-family: "My Custom Font";
+                src: url(BebasNeue-Regular.ttf) format("truetype");
+            }
+            .customfont { 
+              font-family: "My Custom Font", Verdana, Tahoma;
+            }
+            </style>
+          <h5 class="card-title" style="font-family: 'Oswald', sans-serif; color: white; font-size: 25px;">Biohazard RP | Weapon Skins</h5>
+          <hr/ style=" height: 0.8px;">
+          <form>
+            <div class="form-group">
+              <label for="tint" style="float: left; font-family: 'Oswald', sans-serif; font-size: 16px; color: white;">Weapon Skins</label>
+                <select id="tint">
+					<option value="0" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 166, 0); border-radius: 15px;">Default</option>
+					<option value="1" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Green</option>
+					<option value="2" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Gold</option>
+					<option value="3" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Rose</option>
+					<option value="4" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Camo</option>
+					<option value="5" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Police</option>
+					<option value="6" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Orange</option>
+					<option value="7" style="background-color: black; font-family: 'Oswald', sans-serif; color: white; border: 2px solid rgb(255, 255, 255); border-radius: 15px;">Silver</option>
+				</select>
+            </div>  
+              <div class="form-group">
+                <label for="skinURL" style="float: left; font-family: 'Oswald', sans-serif; font-size: 16px; color: white;">Custom Skin (URL)</label>       
+				<input type="text" class="form-control" id="skinURL" aria-describedby="title"  style="background-color: transparent;border: none;color:rgb(255, 255, 255);    -webkit-box-shadow: none;
+                box-shadow: none;">
+			  </div>
+              <hr/>
+            <button type="submit" id="submit" class="btn btn-primary" style="width: 200px;font-family: 'Oswald', sans-serif; background: linear-gradient(90deg, rgb(255, 187, 0) 0%, rgba(255, 205, 66, 0.712) 100%); border: 2px solid rgb(255, 255, 255); ">Apply</button>
+            <image src="https://media.discordapp.net/attachments/836476260166270996/970140421747540008/Usdadadsadantitled-3.png" style="position: absolute; bottom: 9px; left: -13px; border-image-width: 150px; height: 150px; margin: 0; padding: 0;"></image>
+          </form>          
+        </div>  
+      </div>
+  </body>
+  <script>
+    window.addEventListener('message', function(event) {
+             if (event.data.type == "open") {
+               document.getElementById("tint").value = "";
+               document.getElementById("skinURL").value = "";
+               document.getElementById("dimension_value")
+
+                 $("#container").slideToggle("slow");
+             } else  {
+                $("#container").hide()
+             }
+         });
+         $(document).keyup(function(e) {
+             if (e.key === "Escape") {
+                 $("#container").slideUp();
+                 setTimeout(function(){
+                     $.post('http://biohazard-weaponskin/exit', JSON.stringify({}));
+                 }, 300);
+             }
+         })
+
+
+         function UpdateValue() {
+             console.log(value_user)
+             if (value_user) {
+                 var dimension_value = document.getElementById("dimension_value")
+
+                 if (parseFloat(dimension_value.value) < 5.1 && parseFloat(dimension_value.value) > 0.0) {
+                     var dimension = document.getElementById("dimension")
+                     dimension.value = dimension_value.value
+                 }
+             }
+         }
+   
+         $("#submit").click(function() {
+             var tint = document.getElementById("tint");
+             var aim = document.getElementById("aim");
+     var skinURL = document.getElementById("skinURL");
+             
+             $("#container").slideUp();
+                 setTimeout(function(){
+                     $.post('http://biohazard-weaponskin/exit', JSON.stringify({}));
+                 }, 100);
+            
+               $.post(
+                   'http://biohazard-weaponskin/submit',
+                 JSON.stringify({
+                   tint: $("#tint").val(),     
+                   aim: $("#aim").val(),
+                   skinURL: $("#skinURL").val(),
+                 })
+             );
+ 
+         })
+
+         
+         
+</script>
+<style>
+   hr{
+       background-color:rgb(255, 153, 0)
+   }
+</style>
+</html>
+
