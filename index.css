@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Copyright 2023-2030 spoody.dev */
+
+
+* {
+    overflow-x: hidden;
+    z-index: 100;
+}
+
+
+.background {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 380%;
+    width: 120%;
+    background: rgb(13,18,27);
+    background: linear-gradient(115deg, rgba(13,18,27,1) 29%, rgb(30, 41, 63) 100%);
+}
+
+.background-filter {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    width: 6%; height: 200%;
+    left: 39.20%;
+    top: -50%;
+    animation-name: openup;
+    animation-duration: 1.30s;
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+.header-bg {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 120%;
+    height: 7%;
+    background-color: rgb(11, 16, 24);
+    z-index:100;
+    border-bottom: 1px solid rgb(78, 93, 122);
+}
+
+.header-discord {
+    position: absolute;
+    top: 30%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.753);
+    left: 30%;
+    font-weight: lighter;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+    animation-name: showpurch;
+    animation-duration: 3s;
+}
+
+.header-discord:hover {
+    transition: 0.30s ease-in-out;  
+    color: white;
+}
+
+.header-buy {
+    position: absolute;
+    top: 30%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.753);
+    right: 45%;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+    animation-name: showdisc;
+    animation-duration: 3s;
+}
+
+.header-buy:hover {
+    transition: 0.30s ease-in-out;  
+    color: white;
+}
+
+.header {
+    position: absolute;
+    top: 17%;
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 3px rgb(0, 0, 0);
+    user-select: none;
+    font-weight: bolder;
+    width: 100%;
+    animation-name: header-open;
+    animation-duration: 3s;
+}
+
+.header-description {
+    position: absolute;
+    top: 24.50%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(13, 18, 27);
+    text-align: center;
+    user-select: none;
+    width: 100%;
+    animation-name: headerdesc-open;
+    animation-duration: 4s;
+    transition: 2s ease-in-out;  
+}
+
+.button-pre {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    left: 43%;
+    font-family: 'Poppins', sans-serif;
+    top: 39%;
+    color: white;
+    font-size: 22px;
+    border-radius: 11px;
+    padding: 18px;
+    transition: 0.30s ease-in-out;  
+    animation-name: button-show;
+    animation-duration: 3s;
+}
+
+.button-pre:hover {
+    transition: 0.30s ease-in-out;  
+    background-color: rgb(59, 75, 105);
+}
+
+.button-learn {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 51.50%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    top: 39%;
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 11px;
+    padding: 18px;
+    transition: 0.30s ease-in-out;  
+    animation-name: button-show;
+    animation-duration: 3s;
+}
+
+.button-learn:hover {
+    transition: 0.30s ease-in-out;  
+    background-color: rgb(59, 75, 105);
+}
+
+.features-main {
+    position: absolute;
+    left: 45%;
+    bottom: 37%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(78, 93, 122);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.features-sec {
+    position: absolute;
+    left: 47%;
+    bottom: -57%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(78, 93, 122);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.features-off {
+    position: absolute;
+    left: 41%;
+    bottom: -65%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.show-sec {
+    position: absolute;
+    left: 47.25%;
+    bottom: -151%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(78, 93, 122);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.show-off {
+    position: absolute;
+    left: 38%;
+    bottom: -159%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.features-line {
+    position: absolute;
+    width: 70%;
+    height: 0.2%;
+    bottom: 35%;
+    left: 16%;
+    border-radius: 100px;
+    background-color: rgba(78, 93, 122, 0.377);
+}
+
+.service-line {
+    position: absolute;
+    width: 70%;
+    height: 0.25%;
+    bottom: -66%;
+    left: 15%;
+    border-radius: 100px;
+    background-color: rgba(78, 93, 122, 0.377);
+}
+
+.show-line {
+    position: absolute;
+    width: 70%;
+    height: 0.25%;
+    bottom: -160%;
+    left: 15%;
+    border-radius: 100px;
+    background-color: rgba(78, 93, 122, 0.377);
+}
+
+.monthly {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 13%;
+    width: 22%;
+    height: 65%;
+    bottom: -35%;
+    border-radius: 11px;
+    box-shadow: 0px 0px 11px rgb(8, 8, 8);
+}
+
+.monthly-text {
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.monthly-line {
+    position: absolute;
+    width: 70%;
+    height: 0.35%;
+    top: 21.50%;
+    left: 15%;
+    border-radius: 100px;
+    background-color: rgba(78, 93, 122, 0.377);
+}
+
+.monthly-price {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(180, 180, 180);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.monthly-access {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    text-justify: left;
+    left: 12%;
+    margin: 10px;
+}
+
+.monthly-buy {
+    position: absolute;
+    background-color: rgb(59, 75, 105);
+    left: 13%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    bottom: 4%;
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 11px;
+    padding: 15px;
+    width: 75%;
+    transition: 0.30s ease-in-out;  
+}
+
+.monthly-buy:hover {
+    transition: 0.30s ease-in-out;  
+    background-color: rgb(70, 78, 94);
+}
+
+.quarterly-access {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    text-justify: left;
+    left: 13%;
+    margin: 10px;
+}
+
+.lifetime-access {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    text-justify: left;
+    left: 13%;
+    margin: 10px;
+}
+
+.quarterly-text {
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.quarterly-line {
+    position: absolute;
+    width: 70%;
+    height: 0.35%;
+    top: 21.50%;
+    left: 15%;
+    border-radius: 100px;
+    background-color: rgba(78, 93, 122, 0.377);
+}
+
+.quarterly-price {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(180, 180, 180);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.quarterly {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 40%;
+    width: 22%;
+    height: 65%;
+    bottom: -35%;
+    border-radius: 11px;
+    box-shadow: 0px 0px 11px rgb(8, 8, 8);
+}
+
+.quarterly-buy {
+    position: absolute;
+    background-color: rgb(59, 75, 105);
+    left: 13%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    bottom: 4%;
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 11px;
+    padding: 15px;
+    width: 75%;
+    transition: 0.30s ease-in-out;  
+}
+
+.quarterly-buy:hover {
+    transition: 0.30s ease-in-out;  
+    background-color: rgb(70, 78, 94);
+}
+
+.lifetime {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 67%;
+    width: 22%;
+    height: 65%;
+    bottom: -35%;
+    border-radius: 11px;
+    box-shadow: 0px 0px 11px rgb(8, 8, 8);
+}
+
+.lifetime-text {
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(166, 176, 196);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.lifetime-line {
+    position: absolute;
+    width: 70%;
+    height: 0.35%;
+    top: 21.50%;
+    left: 15%;
+    border-radius: 100px;
+    background-color: rgba(78, 93, 122, 0.377);
+}
+
+.lifetime-price {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(180, 180, 180);
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.lifetime-buy {
+    position: absolute;
+    background-color: rgb(59, 75, 105);
+    left: 13%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    bottom: 4%;
+    color: white;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 11px;
+    padding: 15px;
+    width: 75%;
+    transition: 0.30s ease-in-out;  
+}
+
+.lifetime-buy:hover {
+    transition: 0.30s ease-in-out;  
+    background-color: rgb(70, 78, 94);
+}
+
+.cheat-dec {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 18%;
+    width: 20%;
+    height: 25%;
+    bottom: -95%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.cheat-dec-text {
+    position: absolute;
+    color: rgb(166, 176, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    top: 21%;
+    text-shadow: 0px 0px 7px #000;
+}
+
+.op-dec {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 18%;
+    width: 20%;
+    height: 25%;
+    bottom: -125%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.op-dec-text {
+    position: absolute;
+    color: rgb(166, 176, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    top: 21%;
+    text-shadow: 0px 0px 7px #000;
+}
+
+.db-dec {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 40%;
+    width: 20%;
+    height: 25%;
+    bottom: -95%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.db-dec-text {
+    position: absolute;
+    color: rgb(166, 176, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    top: 21%;
+    text-shadow: 0px 0px 7px #000;
+}
+
+.fl-dec {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 40%;
+    width: 20%;
+    height: 25%;
+    bottom: -125%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.fl-dec-text {
+    position: absolute;
+    color: rgb(166, 176, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    top: 21%;
+    text-shadow: 0px 0px 7px #000;
+}
+
+.bd-dec {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 62%;
+    width: 20%;
+    height: 25%;
+    bottom: -95%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.bd-dec-text {
+    position: absolute;
+    color: rgb(166, 176, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    top: 21%;
+    text-shadow: 0px 0px 7px #000;
+}
+
+.support-dec {
+    position: absolute;
+    background-color: rgb(34,43,60);
+    left: 62%;
+    width: 20%;
+    height: 25%;
+    bottom: -125%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.support-dec-text {
+    position: absolute;
+    color: rgb(166, 176, 196);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    top: 21%;
+    text-shadow: 0px 0px 7px #000;
+}
+
+.frame {
+    position: absolute;
+    bottom: -225%;
+    left: 25%;
+    width: 50%;
+    height: 60%;
+    border-radius: 11px;
+    box-shadow: 0px 4px 11px rgb(8, 8, 8);
+}
+
+.bottom-bg {
+    position: absolute;
+    bottom: -260%;
+    left: 0%;
+    width: 200%;
+    height: 7%;
+    border-top: 1px solid rgb(78, 93, 122);
+}
+
+.bottom-text {
+    position: absolute;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    left: 13%;
+    bottom: -260%;
+}
+
+.bottom-slogan {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.788);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    left: 12.90%;
+    bottom: -262%;
+}
+
+.imported-legal-watermark-copyright-text {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.466);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    left: 12.90%;
+    bottom: -264.80%;
+}
+
+
+.bottom-company {
+    position: absolute;
+    color: rgb(177, 177, 177);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    left: 50%;
+    font-weight: bolder;
+    bottom: -258%;
+}
+
+.bottom-company-news {
+    position: absolute;
+    color: rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    left: 50%;
+    bottom: -262%;
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+}
+
+
+.bottom-product {
+    position: absolute;
+    color: rgb(177, 177, 177);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    left: 58%;
+    font-weight: bolder;
+    bottom: -258.30%;
+}
+
+.bottom-product-features {
+    position: absolute;
+    color: rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    left: 58%;
+    bottom: -262.40%;
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+}
+
+.bottom-product-ft {
+    position: absolute;
+    color: rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    left: 58%;
+    bottom: -266%;
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+}
+
+.bottom-support {
+    position: absolute;
+    color: rgb(177, 177, 177);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    left: 66%;
+    font-weight: bolder;
+    bottom: -258.50%;
+}
+
+.bottom-support-discord {
+    position: absolute;
+    color: rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    left: 66%;
+    bottom: -262.40%;
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+}
+
+.bottom-legal {
+    position: absolute;
+    color: rgb(177, 177, 177);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    left: 73%;
+    font-weight: bolder;
+    bottom: -258.50%;
+}
+
+.bottom-legal-terms {
+    position: absolute;
+    color: rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    left: 73%;
+    bottom: -262.40%;
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+}
+
+.bottom-legal-privacy {
+    position: absolute;
+    color: rgb(233, 233, 233);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    left: 73%;
+    bottom: -266%;
+    user-select: none;
+    transition: 0.30s ease-in-out;  
+}
+
+.bottom-company-news:hover {
+    transition: 0.30s ease-in-out;  
+    color: rgb(166, 176, 196);
+    transform: scale(1.01);
+}
+
+.bottom-product-features:hover {
+    transition: 0.30s ease-in-out;  
+    color: rgb(166, 176, 196);
+    transform: scale(1.01);
+}
+
+.bottom-product-ft:hover {
+    transition: 0.30s ease-in-out;  
+    color: rgb(166, 176, 196);
+    transform: scale(1.01);
+}
+
+.bottom-support-discord:hover {
+    transition: 0.30s ease-in-out;  
+    color: rgb(166, 176, 196);
+    transform: scale(1.01);
+}
+
+.bottom-legal-terms:hover {
+    transition: 0.30s ease-in-out;  
+    color: rgb(166, 176, 196);
+    transform: scale(1.01);
+}
+
+.bottom-legal-privacy:hover {
+    transition: 0.30s ease-in-out;  
+    color: rgb(166, 176, 196);
+    transform: scale(1.01);
+}
+
+@keyframes button-show {
+    from{opacity: 0%; top: 45%;}
+    to{opacity: 100%; top: 39%;}
+}
+
+@keyframes header-open {
+    from{opacity: 0%; top: 30%;}
+    to{opacity: 100%; top: 17%;}
+}
+
+@keyframes headerdesc-open {
+    from{opacity: 0%; top: 35%;}
+    to{opacity: 100%; top: 24.50%;}
+}
+
+@keyframes showpurch {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+@keyframes showdisc {
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+@keyframes openup {
+    from{transform: scale(0.00);}
+    to{transform: scale(1.00); }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(13, 18, 27);
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(78, 93, 122);
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(101, 123, 167);
+}
+
+#month {
+    opacity: 0%;
+    top: auto;
+    transition: 0.50s ease-in-out;  
+}
+
+#quarterly {
+    opacity: 0%;
+    transition: 0.50s ease-in-out;  
+}
+
+#lifetime {
+    opacity: 0%;
+    transition: 0.50s ease-in-out;  
+}
+
+#month:hover {
+    transform: scale(1.02);
+    transition: 0.30s ease-in-out;  
+}
+
+#quarterly:hover {
+    transform: scale(1.02);
+    transition: 0.30s ease-in-out;  
+}
+
+#lifetime:hover {
+    transform: scale(1.02);
+    transition: 0.30s ease-in-out;  
+}
